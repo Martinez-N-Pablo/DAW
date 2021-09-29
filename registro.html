@@ -10,17 +10,18 @@ Pagina de registro
 <body>
     <form action="principal.html">
         <p>Nombre y apellidos</p>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus required>
         <p>Contraseña</p>
-        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
         <p>Repitir contraseña</p>
-        <input type="password" name="contraseña-repetir" id="contraseña-repetir" placeholder="Repetir contraseña">
+        <input type="password" name="contraseña-repetir" id="contraseña-repetir" placeholder="Repetir contraseña" required>
         <p>Correo electrónico</p>
-        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="email" name="email" id="email" placeholder="Email" required>
         <p>Sexo</p>
         <select name="sexo" id="sexo">
             <option value="M">Mujer</option>
             <option value="H">Hombre</option>
+            <option value="H">Mazinger Z</option>
         </select>
         <p>Fecha de nacimiento</p>
         <input type="date" name="fecha" id="fecha" placeholder="Fecha de nacimiento">
