@@ -1,0 +1,42 @@
+Pagina de registro
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="principal.html">
+        <p>Nombre y apellidos</p>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        <p>Contraseña</p>
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+        <p>Repitir contraseña</p>
+        <input type="password" name="contraseña-repetir" id="contraseña-repetir" placeholder="Repetir contraseña">
+        <p>Correo electrónico</p>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <p>Sexo</p>
+        <select name="sexo" id="sexo">
+            <option value="M">Mujer</option>
+            <option value="H">Hombre</option>
+        </select>
+        <p>Fecha de nacimiento</p>
+        <input type="date" name="fecha" id="fecha" placeholder="Fecha de nacimiento">
+        <p>Ciudad</p>
+        <input type="text" name="ciudad" id="ciduad">
+        <p>Pais</p>
+        <select name="pais" id="pais">
+            <option value="España">España</option>
+            <option value="Francia">Francia</option>
+            <option value="Inglaterra">Inglaterra</option>
+            <option value="Italia">Italia</option>
+            <option value="Alemania">Alemania</option>
+        </select>
+        <p>Foto de perfil</p>
+        <input type="file" name="imagen" id="imagen" >
+        <button>Aceptar</button>
+    </form>
+</body>
+</html>
