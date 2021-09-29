@@ -5,28 +5,46 @@ Pagina de registro
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro - Pictures & Images</title>
 </head>
 <body>
-    <form action="principal.html">
-        <p>Nombre y apellidos</p>
-        <input type="text" name="nombre" id="nombre" placeholder="Nombre" autofocus required>
+    <!--Barra de navegacion-->
+    <header id="barra-navegacion" class="barra-navegacion">
+        <a href="index.html" class="logo" id="logo">Logo</a>
+        <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
+        <ul class="top-navigation">
+            <li class="bottom-nav-items"><a href="index.html">Home</a></li>
+            <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
+            <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
+        </ul>
+    </header>
+    <!--Formulario registro del usuario-->
+    <form action="principal.html" id="form_registrarse">
+        <p>Nombre Usuario</p>
+        <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Introduce tu nombre de usuario" autocomplete="off" autofocus required>
+
         <p>Contraseña</p>
-        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" autocomplete="off" required>
+
         <p>Repitir contraseña</p>
-        <input type="password" name="contraseña-repetir" id="contraseña-repetir" placeholder="Repetir contraseña" required>
+        <input type="password" name="contraseña-repetir" id="contraseña-repetir" placeholder="Repetir contraseña" autocomplete="off" required>
+
         <p>Correo electrónico</p>
-        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+
         <p>Sexo</p>
-        <select name="sexo" id="sexo">
+        <select name="sexo" id="sexo" required>
             <option value="M">Mujer</option>
             <option value="H">Hombre</option>
             <option value="H">Mazinger Z</option>
         </select>
+
         <p>Fecha de nacimiento</p>
         <input type="date" name="fecha" id="fecha" placeholder="Fecha de nacimiento">
+
         <p>Ciudad</p>
         <input type="text" name="ciudad" id="ciduad">
+
         <p>Pais</p>
         <select name="pais" id="pais">
             <option value="España">España</option>
@@ -35,9 +53,14 @@ Pagina de registro
             <option value="Italia">Italia</option>
             <option value="Alemania">Alemania</option>
         </select>
+
         <p>Foto de perfil</p>
-        <input type="file" name="imagen" id="imagen" >
-        <button>Aceptar</button>
+        <input type="file" name="imagen" id="imagen">
+
+        <footer id="botones">
+            <input type="reset" value="Limpiar">
+            <input type="submit" value="Registrarse" id="Registro">
+        </footer>
     </form>
 </body>
 </html>
