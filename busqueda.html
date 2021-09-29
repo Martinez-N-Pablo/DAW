@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>busqueda</title>
+    <title>Busqueda - Pictures & Images</title>
 </head>
 <body>
-    <header>
-        <a href="" class="logo" id="logo">Logo</a>
-        <input type="text" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda rápida">
+    <!--Barra de navegacion-->
+    <header id="barra-navegacion" class="barra-navegacion">
+        <a href="index.html" class="logo" id="logo">Logo</a>
+        <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
         <ul class="top-navigation">
-            <li class="bottom-nav-items"><a href="principal.html">Home</a></li>
+            <li class="bottom-nav-items"><a href="index.html">Home</a></li>
             <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
-            <li class="top-nav-items"><a href="registro.html">Iniciar Sesion</a></li>
+            <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
         </ul>
     </header>
-    <form action="resultado-busqueda.html">
+    <!--Seccion de busqueda-->
+    <form action="resultado_busqueda.html">
         <p>Título</p>
-        <input type="text" name="titulo" id="titulo">
+        <input type="text" name="titulo" id="titulo" autofocus>
         <p>Fecha entre</p>
-        <input type="date" name="fecha-inicial" id="fecha-inicial">
-        Y
-        <input type="date" name="fecha-final" id="fecha-final">
+        <div id="fechas">
+            <input type="date" name="fecha-inicial" id="fecha-inicial">
+            <p>Y</p>
+            <input type="date" name="fecha-final" id="fecha-final">
+        </div>
         <p>Pais</p>
         <select name="pais" id="pais">
             <option value="España">España</option>
@@ -31,7 +35,8 @@
             <option value="Italia">Italia</option>
             <option value="Alemania">Alemania</option>
         </select>
-        <button>Buscar</button>
+        <input type="reset" value="Limpiar">
+        <input id="buscar-ruta" type="submit" value="Buscar">
     </form>   
 </body>
 </html>
