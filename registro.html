@@ -1,4 +1,3 @@
-Pagina de registro
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,48 +18,51 @@ Pagina de registro
         </ul>
     </header>
     <!--Formulario registro del usuario-->
-    <form action="principal.html" id="form_registrarse">
-        <p>Nombre Usuario</p>
-        <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Introduce tu nombre de usuario" autocomplete="off" autofocus required>
-
-        <p>Contraseña</p>
-        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" autocomplete="off" required>
-
-        <p>Repitir contraseña</p>
-        <input type="password" name="contraseña-repetir" id="contraseña-repetir" placeholder="Repetir contraseña" autocomplete="off" required>
-
-        <p>Correo electrónico</p>
-        <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
-
-        <p>Sexo</p>
-        <select name="sexo" id="sexo" required>
-            <option value="M">Mujer</option>
-            <option value="H">Hombre</option>
-            <option value="H">Mazinger Z</option>
-        </select>
-
-        <p>Fecha de nacimiento</p>
-        <input type="date" name="fecha" id="fecha" placeholder="Fecha de nacimiento">
-
-        <p>Ciudad</p>
-        <input type="text" name="ciudad" id="ciduad">
-
-        <p>Pais</p>
-        <select name="pais" id="pais">
-            <option value="España">España</option>
-            <option value="Francia">Francia</option>
-            <option value="Inglaterra">Inglaterra</option>
-            <option value="Italia">Italia</option>
-            <option value="Alemania">Alemania</option>
-        </select>
-
-        <p>Foto de perfil</p>
-        <input type="file" name="imagen" id="imagen">
-
-        <footer id="botones">
-            <input type="reset" value="Limpiar">
-            <input type="submit" value="Registrarse" id="Registro">
-        </footer>
-    </form>
+    <main id="form-registro">
+        <h1>Página de Registro</h1>
+        <form action="principal.html" id="form_registrarse">
+            <p>Nombre Usuario</p>
+            <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Introduce tu nombre de usuario" autocomplete="off" autofocus required>
+    
+            <p>Contraseña</p>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" autocomplete="off" required>
+    
+            <p>Repitir contraseña</p>
+            <input type="password" name="contraseña-repetir" id="contraseña-repetir" placeholder="Repetir contraseña" autocomplete="off" required>
+    
+            <p>Correo electrónico</p>
+            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off" required>
+    
+            <p>Sexo</p>
+            <select name="sexo" id="sexo">
+                <option value="M">Mujer</option>
+                <option value="H">Hombre</option>
+                <option value="H">Mazinger Z</option>
+            </select>
+    
+            <p>Fecha de nacimiento</p>
+            <input type="date" name="fecha" id="fecha" required>
+    
+            <p>Ciudad</p>
+            <input type="text" name="ciudad" id="ciduad" required>
+    
+            <p>Pais</p>
+            <select name="pais" id="pais">
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Inglaterra">Inglaterra</option>
+                <option value="Italia">Italia</option>
+                <option value="Alemania">Alemania</option>
+            </select>
+    
+            <p>Foto de perfil</p>
+            <input type="file" name="imagen" id="imagen">
+    
+            <footer id="botones">
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Registrarse" id="Registro">
+            </footer>
+        </form>
+    </main>
 </body>
 </html>
