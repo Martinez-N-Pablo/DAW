@@ -11,32 +11,43 @@
     <header id="barra-navegacion" class="barra-navegacion">
         <a href="index.html" class="logo" id="logo">Logo</a>
         <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
-        <ul class="top-navigation">
-            <li class="bottom-nav-items"><a href="index.html">Home</a></li>
-            <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
-            <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
-        </ul>
+        <nav class="barra-navegacion">
+            <ul class="top-navigation">
+                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
+                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
+                <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
     </header>
+
     <!--Seccion de busqueda-->
-    <form action="resultado_busqueda.html">
-        <p>Título</p>
-        <input type="text" name="titulo" id="titulo" autofocus>
-        <p>Fecha entre</p>
-        <div id="fechas">
-            <input type="date" name="fecha-inicial" id="fecha-inicial">
-            <p>Y</p>
-            <input type="date" name="fecha-final" id="fecha-final">
-        </div>
-        <p>Pais</p>
-        <select name="pais" id="pais">
-            <option value="España">España</option>
-            <option value="Francia">Francia</option>
-            <option value="Inglaterra">Inglaterra</option>
-            <option value="Italia">Italia</option>
-            <option value="Alemania">Alemania</option>
-        </select>
-        <input type="reset" value="Limpiar">
-        <input id="buscar-ruta" type="submit" value="Buscar">
-    </form>   
+    <main class="main-content">
+        <form action="resultado_busqueda.html">
+            <p>Título</p>
+            <input type="text" name="titulo" id="titulo" autofocus>
+            <p>Fecha entre</p>
+            <div id="fechas">
+                <input type="date" name="fecha-inicial" id="fecha-inicial">
+                <p>Y</p>
+                <input type="date" name="fecha-final" id="fecha-final">
+            </div>
+            <p>Pais</p>
+            <select name="pais" id="pais">
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Inglaterra">Inglaterra</option>
+                <option value="Italia">Italia</option>
+                <option value="Alemania">Alemania</option>
+            </select>
+            <input type="reset" value="Limpiar">
+            <input id="buscar-ruta" type="submit" value="Buscar">
+        </form>
+    </main>
+    <footer>
+        <p>Pablo Martínez Navarro</p>
+        <p>Iván Baldó Rodríguez</p>
+        <p>Diseño Aplicaciones Web</p>
+        <time datetime="2000-01-01">2021-10-01</time>
+    </footer>
 </body>
 </html>

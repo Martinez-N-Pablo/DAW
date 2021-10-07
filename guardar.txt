@@ -1,0 +1,69 @@
+<footer>
+        <p>Pablo Martínez Navarro</p>
+        <p>Iván Baldó Rodríguez</p>
+        <p>Diseño Aplicaciones Web</p>
+        <time datetime="2000-01-01">2021-10-01</time>
+    </footer>
+
+    <main id="main-content" class="main-content">
+        <article>
+            <article id="publicacion-1" class="publicacion-1">
+                <div id="datos-publicacion" class="datos-publicacion">
+                    <h2>Publicación 1</h2>
+                    <time datetime="00-00-0000">15-08-2021</time>
+                    <p>Algorfa</p>
+                </div>
+                <div class="photo-container">
+                    <a href="singup.html" class="photo-link"><img src="imagenes/alpes-suizos.jpg"></a>
+                </div>
+            </article>
+            <article id="publicacion-2" class="publicacion-2">
+                <div id="datos-publicacion" class="datos-publicacion">
+                    <h2>Publicación 2</h2>
+                    <time datetime="00-00-0000">15-08-2021</time>
+                    <p>Algorfa</p>
+                </div>
+                <div class="photo-container">
+                    <a href="singup.html" class="photo-link"><img src="imagenes/alpes-suizos.jpg"></a>
+                </div>
+            </article>
+            <article id="publicacion-3" class="publicacion-3">
+                <div id="datos-publicacion" class="datos-publicacion">
+                    <h2>Publicación 3</h2>
+                    <time datetime="00-00-0000">15-08-2021</time>
+                    <p>Algorfa</p>
+                </div>
+                <div class="photo-container">
+                    <a href="singup.html" class="photo-link"><img src="imagenes/alpes-suizos.jpg"></a>
+                </div>
+            </article>
+            <article id="publicacion-4" class="publicacion-4">
+                <div id="datos-publicacion" class="datos-publicacion">
+                    <h2>Publicación 4</h2>
+                    <time datetime="00-00-0000">15-08-2021</time>
+                    <p>Algorfa</p>  
+                </div>
+                <div class="photo-container">
+                    <a href="singup.html" class="photo-link"><img src="imagenes/alpes-suizos.jpg"></a>
+                </div>
+            </article>
+            <article id="publicacion-5" class="publicacion-5">
+                <div id="datos-publicacion" class="datos-publicacion">
+                    <h2>Publicación 5</h2>
+                    <time datetime="00-00-0000">15-08-2021</time>
+                    <p>Algorfa</p>  
+                </div>
+                <div class="photo-container">
+                    <a href="singup.html" class="photo-link"><img src="imagenes/alpes-suizos.jpg" ></a>
+                </div>
+            </article>
+        </article>
+    </main>
+
+    <nav class="barra-navegacion">
+            <ul class="top-navigation">
+                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
+                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
+                <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>

@@ -11,20 +11,32 @@
     <header id="barra-navegacion" class="barra-navegacion">
         <a href="index.html" class="logo" id="logo">Logo</a>
         <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
-        <ul class="top-navigation">
-            <li class="bottom-nav-items"><a href="index.html">Home</a></li>
-            <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
-            <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
-        </ul>
+        <nav class="barra-navegacion">
+            <ul class="top-navigation">
+                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
+                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
+                <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <form action="principal.html" id="form-iniciar-sesion">
-        <input type="email" name="email" id="email" placeholder="Correo electrónico" required autofocus>
-        <input type="password" name="password" id="password" placeholder="Contraseña" required>
-        <p>¿No tienes una cuenta?</p><a href="registro.html">Registrarse</a>
-        <footer id="botones">
-            <input id="datos-iniciar-sesion" type="submit" value="Iniciar Sesión">          
-        </footer>
-    </form>
+    <main class="main-content">
+        <h1>Inicio Sesión</h1>
+        <form action="principal.html" id="form-iniciar-sesion">
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required autofocus>
+            <input type="password" name="password" id="password" placeholder="Contraseña" required>
+            <p>¿No tienes una cuenta?</p><a href="registro.html">Registrarse</a>
+            <footer id="botones">
+                <input id="datos-iniciar-sesion" type="submit" value="Iniciar Sesión">          
+            </footer>
+        </form>
+    </main>
+
+    <footer>
+        <p>Pablo Martínez Navarro</p>
+        <p>Iván Baldó Rodríguez</p>
+        <p>Diseño Aplicaciones Web</p>
+        <time datetime="2000-01-01">2021-10-01</time>
+    </footer>
 </body>
 </html>
