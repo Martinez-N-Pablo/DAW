@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solicitud_Album - Pictures & Images</title>
+        <style>
+            table, tr, th, td {
+            border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Barra de navegacion-->
+        <header id="barra-navegacion" class="barra-navegacion">
+            <a href="index.html" class="logo" id="logo">Logo</a>
+            <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
+            <nav class="barra-navegacion">
+                <ul class="top-navigation">
+                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
+                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
+                <li class="bottom-nav-items"><a href="resultado_busqueda_album.html">Imprimir album</a></li>
+                <li class="bottom-nav-items"><a href="resultado_busqueda_album.html">Resultado álbum</a></li>
+            </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Parte donde se introducen los datos-->
+            <section>
+                <h2>Solicitud de album</h2>
+                <p>Los campos marcados con (*) son obligatorios</p>
+                <table id="tabla">
+                    <caption>Precios</caption>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Tarifa</th>
+                    </tr>
+                    <tr>
+                        <td>5 páginas</td>
+                        <td>0.10€ por pág</td>
+                    </tr>
+                    <tr>
+                        <td>entre 5 y 11 páginas</td>
+                        <td>0.08€ por pág</td>
+                    </tr>
+                    <tr>
+                        <td>11 páginas</td>
+                        <td>0.07€ por pág</td>
+                    </tr>
+                    <tr>
+                        <td>Blannco y negro</td>
+                        <td>0€</td>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>0.05€ por foto</td>
+                    </tr>
+                    <tr>
+                        <td>Resolución 300</td>
+                        <td>0.02€ por foto</td>
+                    </tr>
+                </table>
+                <form action="resultado_solitud_album.hmtl">
+                    <!-- Parte donde se introducen los datos personales-->
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <label for="nombre">*Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" maxlength="200" placeholder="Nombre" required autofocus>
+                        <label for="apellidos">*Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" maxlength="200" required>
+                        <label for="email">*Correo electrónico:</label>
+                        <input type="email" id="email" name="email" maxlength="200" placeholder="email" required>
+                        <label for="telefono">*Telefono:</label>
+                        <input type="tel" id="telefono" placeholder="Telefono" name="telefono">
+                    </fieldset>
+                    <!-- Parte para seleccionar la direccion de envio-->
+                    <fieldset>
+                        <legend>Dirección de envio</legend>
+                        <label for="calle">*Calle:</label>
+                        <input type="text"  id="calle" name="calle" required>
+                        <label for="numero_casa">*Numero:</label>
+                        <input type="number" id="numero_casa" name="numero_casa" required>
+                        <label for="piso">Piso:</label>
+                        <input type="number" id="piso" name="piso">
+                        <label for="escalera">Escalera:</label>
+                        <input type="text" name="escalera" id="escalera">
+                        <label for="codigo_postal">*Codigo postal</label>
+                        <input type="number" required name="codigo_postal" id="codigo_postal">
+                        <label for="localidad">*Localidad:</label>
+                        <select name="localidad" id="localidad">
+                            <option value="Alicante">Alicante</option>
+                            <option value="Marte">Marte</option>
+                            <option value="Narnia">Narnia</option>
+                            <option value="Algorfa">Algorfa</option>
+                        </select>
+                        <label for="provincia">*Provincia:</label>
+                        <select name="provincia" id="provincia">
+                            <option value="Valencia">Valencia</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Extremadura">Extremadura</option>
+                            <option value="Algorfa">Algorfa</option>
+                        </select>
+                        
+                        <label for="pais">*Pais:</label>
+                        <select name="pais" id="pais">
+                            <option value="España">España</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Algorfa">Algorfa</option>
+                        </select>
+                        
+                    </fieldset>
+                    <!-- Parte para seleccionar los datos relacionados con el album-->
+                    <fieldset>
+                        <legend>Album</legend>
+                        <label for="titulo">*Titulo Album:</label>
+                        <input type="text" id="titulo" name="titulo" maxlength="200" required>
+                        <label for="texto_adicional">Texto adicional:</label>
+                        <textarea id="texto_adicional" name="texto_adicional" maxlength="4000"></textarea>
+                        <label for="color">Color de la portada:</label>
+                        <input type="color" id="color" name="color" value="#ff0000">
+                        <label for="resolucion">Resolición:</label>
+                        <input type="range" id="resolucion" name="resolucion" min="150" max="900" step="150" value="150" onchange="document.getElementById('outvol').value=value">
+                        <output id="outvol" name="outvol" for="vol">150</output>
+                        <label for="album">*Album a crear:</label>
+                        <select name="album" id="album">
+                            <option value="album1">Album 1</option>
+                            <option value="album2">Album 2</option>
+                            <option value="album3">Album 3</option>
+                            <option value="album4">Album 4</option>
+                        </select>
+                        <label for="fecha">Fecha de recepción</label>
+                        <input type="date" id="fecha" name="fecha">
+                        <label for="impresion">¿Impresión a color?</label>
+                        <input type="checkbox" id="impresion" name="impresion" >
+                    </fieldset>
+                    <footer>
+                        <input type="reset" value="Limpiar">
+                        <input type="submit" value="Enviar">
+                    </footer>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Pablo Martínez Navarro</p>
+            <p>Iván Baldó Rodríguez</p>
+            <p>Diseño Aplicaciones Web</p>
+            <time datetime="2000-01-01">2021-10-01</time>
+        </footer>
+    </body>
+</html>
