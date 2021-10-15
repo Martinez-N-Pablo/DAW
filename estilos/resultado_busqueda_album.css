@@ -1,0 +1,44 @@
+body main{
+    padding: 1em;
+}
+button{
+   margin-left: 50%;
+   margin-right: 50%;
+
+   padding: 1em;
+   margin-top: 2em;
+}
+body main section div#datos-album{
+    margin: 1em 0 2em 0;
+}
+body main section div#datos-album p,
+body main section div#datos-album span,
+body main section div#datos-album address{
+    margin: .2em;
+}
+/*Seccion imagenes*/
+body main section div#imagenes-album{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+body main section div#imagenes-album h3{
+    align-items: flex-start;
+}
+body main section div#imagenes-album img{
+    width: 100%;
+}
+@media all and (min-width:800px){
+    body main section div#imagenes-album{
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+
+        justify-content: space-around;
+    }
+    body main section div#imagenes-album img{
+        width: 33%;
+        background-color: aqua;
+    }
+}

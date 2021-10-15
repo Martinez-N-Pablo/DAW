@@ -1,0 +1,47 @@
+.publicacion{
+    border: 1px solid #111;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+body main h2{
+    margin: 1em .2em;
+}
+body main section h2{
+    margin: 1em 0;
+}
+body main section article{
+    margin: 1em 0;
+}
+/*separar fecha y ciudad*/
+body main section article div.datos-publicacion div{
+    display: flex;
+    justify-content: space-between;
+
+    padding: .4em 0;
+}
+/*@media all and (min-width:500px){
+    body main{
+        display: block;
+    }
+}*/
+@media all and (min-width:900px){
+    /*Seccion principal del body*/
+    body main section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .publicacion{
+        width: 70%;
+        margin: .5em;
+    }
+}
+
+@media all and (min-width:1200px){
+    .publicacion{
+        width: 31%;
+    }
+}

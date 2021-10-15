@@ -1,0 +1,21 @@
+body main form  p{
+    padding-top: 1em;
+    padding-left: .1em;
+}
+body main form div#fechas{
+    display: flex;
+}
+    body main form div#fechas p{
+        font-size:larger;
+        padding: 0 1em;
+    }
+@media all and (min-width:800px){
+    body main form{
+        width: 50%;
+        margin-left: 50%;
+        margin-right: 50%;
+    }
+    body main form input:nth-child(n){
+        width: 100%;
+    }
+}

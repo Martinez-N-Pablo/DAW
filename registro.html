@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro - Pictures & Images</title>
+    <link rel="stylesheet" href="estilos/estilosComunes.css">
+    <link rel="stylesheet" href="estilos/signup.css">
+    <link rel="stylesheet" href="fontello-5a2f845e/css/fontello.css">
 </head>
 <body>
     <!--Barra de navegacion-->
@@ -13,16 +16,17 @@
         <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
         <nav class="barra-navegacion">
             <ul class="top-navigation">
-                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
-                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
-                <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
+                <li class="top-nav-items"><a href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+                <li class="top-nav-items"><a href="busqueda.html"><span class="icon-search"></span><span>Busqueda</span></a></li>
+                <li class="top-nav-items"><a href="singup.html"><span class="icon-login"></span><span>Iniciar Sesión</span></a></li>
             </ul>
         </nav>
     </header>
     <!--Formulario registro del usuario-->
     <main id="form-registro">
-        <h1>Página de Registro</h1>
-        <form action="principal.html" id="form_registrarse">
+        <form action="principal.html" id="form_registrarse" class="formulario">
+            <h2>Página de Registro</h2>
+
             <p>Nombre Usuario</p>
             <input type="text" name="nombre_usuario" id="nombre_usuario" placeholder="Introduce tu nombre de usuario" autocomplete="off" autofocus required>
     
@@ -60,10 +64,10 @@
             <p>Foto de perfil</p>
             <input type="file" name="imagen" id="imagen">
     
-            <footer id="botones">
+            <div id="botones" class="botones">
                 <input type="reset" value="Limpiar">
                 <input type="submit" value="Registrarse" id="Registro">
-            </footer>
+            </div>
         </form>
     </main>
     <footer>
