@@ -1,27 +1,7 @@
-:root{
-    --negro: #191919;
-    --color-hover-botones: rgb(213, 214, 214);
-    --color-background: rgb(143, 180, 78, .4);
-}
-html{
-    min-height: 100%;
-}
-body{
-    min-height: 100%;
-}
-main{
-    min-height: 100%;
-    display: flex;
-}
-
-section{
-    position: relative;
-}
-#opciones-usuario-registrado{
-    background-color: var(--negro);
+body main section ul li{
     padding: 1em;
 }
-
-a{
-    color: var(--color-hover-botones);
+body main section ul li a{
+    color: var(--negro);
+    padding: 1em;
 }
