@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busqueda - Pictures & Images</title>
+    <link rel="stylesheet" href="estilos/estilosComunes.css">
+    <link rel="stylesheet" href="estilos/busqueda.css">
+    <link rel="stylesheet" href="fontello-5a2f845e/css/fontello.css">
 </head>
 <body>
     <!--Barra de navegacion-->
@@ -13,16 +16,18 @@
         <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
         <nav class="barra-navegacion">
             <ul class="top-navigation">
-                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
-                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
-                <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
+                <li class="top-nav-items"><a href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+                <li class="top-nav-items"><a href="busqueda.html"><span class="icon-search"></span><span>Busqueda</span></a></li>
+                <li class="top-nav-items"><a href="singup.html"><span class="icon-login"></span><span>Iniciar Sesión</span></a></li>
             </ul>
         </nav>
     </header>
 
     <!--Seccion de busqueda-->
     <main class="main-content">
-        <form action="resultado_busqueda.html">
+        <form action="resultado_busqueda.html" class="formulario">
+            <h2>Búsqueda</h2>
+
             <p>Título</p>
             <input type="text" name="titulo" id="titulo" autofocus>
             <p>Fecha entre</p>
@@ -31,7 +36,7 @@
                 <p>Y</p>
                 <input type="date" name="fecha-final" id="fecha-final">
             </div>
-            <p>Pais</p>
+            <p>País</p>
             <select name="pais" id="pais">
                 <option value="España">España</option>
                 <option value="Francia">Francia</option>
@@ -39,8 +44,10 @@
                 <option value="Italia">Italia</option>
                 <option value="Alemania">Alemania</option>
             </select>
-            <input type="reset" value="Limpiar">
-            <input id="buscar-ruta" type="submit" value="Buscar">
+            <div id="botones" class="botones">
+                <input type="reset" value="Limpiar">
+                <input id="buscar-ruta" type="submit" value="Buscar">
+            </div>
         </form>
     </main>
     <footer>

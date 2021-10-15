@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Usuario- Pictures & Images</title>
+    <link rel="stylesheet" href="fontello-5a2f845e/css/fontello.css">
+    <link rel="stylesheet" href="estilos/estilosComunes.css">
+    <link rel="stylesheet" href="estilos/resultado_busqueda_album.css">
 </head>
 <body>
     <!--Barra de navegacion-->
@@ -13,10 +16,10 @@
         <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
         <nav class="barra-navegacion">
             <ul class="top-navigation">
-                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
-                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
-                <li class="bottom-nav-items"><a href="solicitud_album.html">Subir foto</a></li>
-                <li class="bottom-nav-items"><a href="pagina_usuario.html">Configuración</a></li>
+                <li class="top-nav-items"><a href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+                <li class="top-nav-items"><a href="busqueda.html"><span class="icon-search"></span><span>Busqueda</span></a></li>
+                <li class="top-nav-items"><a href="solicitud_album.html"><span class="icon-book"></span><span>Imprimir Álbum</span></a></li>
+                <li class="top-nav-items"><a href="pagina_usuario.html"><span class="icon-cog"></span><span>Página Usuario</span></a></li>
             </ul>
         </nav>
     </header>
@@ -25,23 +28,24 @@
     <main class="main-content">
         <section>
             <h2>Resultado Solicitud</h2>
+            <hr>
             <div id="datos-album">
                 <h3>Datos Álbum</h3>
-                <p id="Nombre">Carlos</p>
-                <p id="Titulo-Album">RocksTar</p>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illo aspernatur sequi fuga corrupti repellendus, iure, id officiis eveniet et veniam quasi recusandae, explicabo aliquam rerum exercitationem sit impedit nihil!</span>
-                <p id="Email-Usuario">random@random.siu</p>
+                <p id="Nombre">Nombre: Carlos</p>
+                <p id="Titulo-Album">Título: RocksTar</p>
+                <span>Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illo aspernatur sequi fuga corrupti repellendus, iure, id officiis eveniet et veniam quasi recusandae, explicabo aliquam rerum exercitationem sit impedit nihil!</span>
+                <p id="Email-Usuario">Email: random@random.siu</p>
                 <p>Color</p>
                 <span style="background-color: #111; width: 4em; height: 4em;">a</span>
-                <p id="telefono">60111111</p>
+                <p id="telefono">Num tlf: 60111111</p>
                 <p id="num-copias">2</p>
-                <address id="direccion-fisica">Dirección Random Nº24</address>
-                <p id="resolucion">150dpi</p>
-                <time datetime="2000-01-01">2021-08-15</time>
+                <address id="direccion-fisica">Dirección: Dirección Random Nº24</address>
+                <p id="resolucion">Resolución: 150dpi</p>
+                <time datetime="2000-01-01">Fecha: 2021-08-15</time>
             </div>
+            <h3>Fotos incluidas</h3>
             <hr>
             <div id="imagenes-album">
-                <h3>Fotos incluidas</h3>
                 <img src="imagenes/alpes-suizos.jpg" alt="Montaña Alpinismo">
                 <img src="imagenes/alpes-suizos.jpg" alt="Montaña Alpinismo">
                 <img src="imagenes/alpes-suizos.jpg" alt="Montaña Alpinismo">

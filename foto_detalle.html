@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilosComunes.css">
+    <link rel="stylesheet" href="estilos/foto_detalle.css">
+    <link rel="stylesheet" href="fontello-5a2f845e/css/fontello.css">
     <title>Detalles Foto - Pictures & Images</title>
 </head>
 <body>
@@ -13,24 +16,36 @@
         <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
         <nav class="barra-navegacion">
             <ul class="top-navigation">
-                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
-                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
-                <li class="top-nav-items"><a href="singup.html">Iniciar Sesion</a></li>
+                <li class="top-nav-items"><a href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+                <li class="top-nav-items"><a href="busqueda.html"><span class="icon-search"></span><span>Busqueda</span></a></li>
+                <li class="top-nav-items"><a href="solicitud_album.html"><span class="icon-book"></span><span>Imprimir Álbum</span></a></li>
+                <li class="top-nav-items"><a href="pagina_usuario.html"><span class="icon-cog"></span><span>Página Usuario</span></a></li>
             </ul>
         </nav>
     </header>
     <!--Detalles de la publicacion seleccionada-->
     <main id="detalles-publicacion">
+        
         <h2>Foto guai X</h2>
-        <div id="foto-container">
-            <img src="imagenes/alpes-suizos.jpg" alt="Montaña Alpinismo">
-        </div>
-        <div id="data-container">
-            <h3>Nombre Usuario</h3>
-            <time datetime="2000-01-01">2021-08-15</time>
-            <p>Algorfa</p>
-            <a href="album.html">Album</a>
-        </div>
+        <article>
+            <div id="data-container">
+                <div>
+                    <h3>Nombre Usuario</h3>
+                    <a href="album.html">Album</a>
+                    
+                </div>
+                <div>
+                    <p>Algorfa</p>
+                    <time datetime="2000-01-01">2021-08-15</time>
+                </div>
+                
+            </div>
+            <div id="foto-container">
+                <img src="imagenes/alpes-suizos.jpg" alt="Montaña Alpinismo">
+            </div>
+            
+        </article>
+        
     </main>
     <footer>
         <p>Pablo Martínez Navarro</p>

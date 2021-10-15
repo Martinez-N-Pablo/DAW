@@ -1,0 +1,8 @@
+body main h2{
+    margin: 1em .2em;
+}
+@media all and (min-width:500px){
+    body main{
+        display: block;
+    }
+}

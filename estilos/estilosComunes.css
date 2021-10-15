@@ -1,0 +1,145 @@
+/*WEB FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=STIX+Two+Text:wght@500&display=swap');
+/*Variables*/
+:root{
+    --negro: #191919;
+    --color-hover-botones: rgb(213, 214, 214);
+    --color-background: rgb(143, 180, 78, .4);
+    --color-hover-input: rgb(180, 178, 178);
+    --size-h2: 2em;
+    --size-h3: 1.5em;
+}
+*{
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    font-size: 1em;
+    font-family: serif;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'STIX Two Text', serif;
+}
+h2{
+    font-size: var(--size-h2);
+}
+h3{
+    font-size: var(--size-h3);
+}
+.top-nav-items{
+    margin-right: 50px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    cursor: pointer;
+    color: rgb(121, 120, 120);
+}
+input{
+    padding: .2em;
+}
+select:hover, input:hover{
+    cursor: pointer;
+    background-color: var(--color-hover-botones);
+}
+.botones{
+    display: flex;
+}
+.botones input{
+    width: 100%;
+
+    margin-top: 1em;
+    padding: .2em;
+}
+.formulario{
+    border: 1px solid #111;
+
+    padding: 3em;
+    margin: 2em auto;
+}
+.photo-link img{
+    max-width: 100%;
+    object-fit: cover;
+}
+body{
+    background-color: var(--color-background);
+    min-width: 300px;
+}
+
+header, footer{
+    background:var(--negro);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding-top: .1em;
+}
+footer{
+    position:sticky;
+    bottom: 100%;
+    padding: .2em .5em;
+}
+header a:nth-child(1){
+    color: white;
+    margin-left: 1em;
+}
+
+/*Barra de navegacion*/
+header nav ul li{
+    padding: 1em;
+}
+
+header nav ul li span:nth-child(2){
+    display: none;
+}
+
+/*Estilos pata pantallas medianas, tablets ordenadores con menor resolucion*/
+/*@media screen and (min-width:481px) and (max-width:1024px){
+    
+}*/
+/*Estilos para movil*/
+@media all and (min-width:300px){
+    /*Estilos para el header*/
+    body{
+        display: block;
+    }
+    
+    #busqueda-rapida{
+        border: 1px solid #111;
+        border-radius: .15em;
+    }
+    /*Estilos para la barra de navegacion*/
+    .top-navigation{
+        display: flex;
+        height:max-content;
+    }
+    
+    nav ul li{
+        border-left: 1px solid #fff;
+    }
+    /*Estilos basicos del main*/
+    main{
+        width: 100%;
+        display: block;
+    }
+    section{
+        margin: auto;
+    }
+    
+    /*Estilos para el footer*/
+}
+/*Para que aprezcan en la barra de navegacion letras e iconos*/
+@media all and (min-width:1050px){
+    header nav ul li span:nth-child(2){
+        display: block;
+    }
+}

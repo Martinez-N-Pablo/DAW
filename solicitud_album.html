@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilosComunes.css">
+        <link rel="stylesheet" href="estilos/solicitud_album.css">
+        <link rel="stylesheet" href="fontello-5a2f845e/css/fontello.css">
         <title>Solicitud_Album - Pictures & Images</title>
         <style>
             table, tr, th, td {
@@ -18,11 +21,11 @@
             <input type="search" name="busqueda-rapida" id="busqueda-rapida" placeholder="Busqueda-rapida">
             <nav class="barra-navegacion">
                 <ul class="top-navigation">
-                <li class="bottom-nav-items"><a href="index.html">Home</a></li>
-                <li class="bottom-nav-items"><a href="busqueda.html">Busqueda</a></li>
-                <li class="bottom-nav-items"><a href="resultado_busqueda_album.html">Imprimir album</a></li>
-                <li class="bottom-nav-items"><a href="resultado_busqueda_album.html">Resultado álbum</a></li>
-            </ul>
+                    <li class="top-nav-items"><a href="index.html"><span class="icon-home"></span><span>Inicio</span></a></li>
+                    <li class="top-nav-items"><a href="busqueda.html"><span class="icon-search"></span><span>Busqueda</span></a></li>
+                    <li class="top-nav-items"><a href="solicitud_album.html"><span class="icon-book"></span><span>Imprimir Álbum</span></a></li>
+                    <li class="top-nav-items"><a href="pagina_usuario.html"><span class="icon-cog"></span><span>Página Usuario</span></a></li>
+                </ul>
             </nav>
         </header>
         <main>
@@ -63,7 +66,7 @@
                 </table>
                 <form action="resultado_busqueda_album.hmtl">
                     <!-- Parte donde se introducen los datos personales-->
-                    <fieldset>
+                    <fieldset id="datos_personales">
                         <legend>Datos Personales</legend>
                         <label for="nombre">*Nombre:</label>
                         <input type="text" id="nombre" name="nombre" maxlength="200" placeholder="Nombre" required autofocus>
@@ -75,7 +78,7 @@
                         <input type="tel" id="telefono" placeholder="Telefono" name="telefono">
                     </fieldset>
                     <!-- Parte para seleccionar la direccion de envio-->
-                    <fieldset>
+                    <fieldset id="direccion_envio">
                         <legend>Dirección de envio</legend>
                         <label for="calle">*Calle:</label>
                         <input type="text"  id="calle" name="calle" required>
@@ -112,7 +115,7 @@
                         
                     </fieldset>
                     <!-- Parte para seleccionar los datos relacionados con el album-->
-                    <fieldset>
+                    <fieldset id="album_fieldset">
                         <legend>Album</legend>
                         <label for="titulo">*Titulo Album:</label>
                         <input type="text" id="titulo" name="titulo" maxlength="200" required>
@@ -121,8 +124,11 @@
                         <label for="color">Color de la portada:</label>
                         <input type="color" id="color" name="color" value="#ff0000">
                         <label for="resolucion">Resolición:</label>
-                        <input type="range" id="resolucion" name="resolucion" min="150" max="900" step="150" value="150" onchange="document.getElementById('outvol').value=value">
-                        <output id="outvol" name="outvol" for="vol">150</output>
+                        <div id="range-container">
+                            <input type="range" id="resolucion" name="resolucion" min="150" max="900" step="150" value="150" onchange="document.getElementById('outvol').value=value">
+                            <output id="outvol" name="outvol" for="vol">150</output>
+                        </div>
+                        
                         <label for="album">*Album a crear:</label>
                         <select name="album" id="album">
                             <option value="album1">Album 1</option>
@@ -135,10 +141,11 @@
                         <label for="impresion">¿Impresión a color?</label>
                         <input type="checkbox" id="impresion" name="impresion" >
                     </fieldset>
-                    <footer>
-                        <input type="reset" value="Limpiar">
-                        <input type="submit" value="Enviar">
-                    </footer>
+                        <div id="botones">
+                            
+                            <input type="reset" value="Limpiar" id="limpiar">
+                            <input type="submit" value="Enviar" id="enviar">
+                        </div>
                 </form>
             </section>
         </main>
